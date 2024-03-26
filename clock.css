@@ -9,6 +9,7 @@ body{
     background: #181818;
 }
 #currentTime{
+    display: none;
     font-size: 3em;
     color: #dadada;
     position: absolute;
