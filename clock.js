@@ -14,10 +14,9 @@ let digitalLoop = setInterval(()=>{
     let second = time[0];
     let minute = time[1];
     let hour = time[2];
-    let zone = 'a.m.';
+    let zone = hour < 12 ? 'a.m.' : 'p.m.';
     if(hour > 13){
         hour = hour - 12;
-        zone = 'p.m.';
     }
     let count = hour+':'+minute+':'+second+' '+zone;
     digital.innerHTML = count;
