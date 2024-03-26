@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --time : '00:00:00';
+}
+body{
+    background: #181818;
+}
+#currentTime{
+    font-size: 3em;
+    color: #dadada;
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%);
+}
+#clock{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-image: url("clock invert.png");
+    background-size: cover;
+    height: 400px;
+    width: 400px;
+    border-radius: 100%;
+}
+#center{
+    background-color: #000000;
+    height: 10px;
+    width: 10px;
+
+}
+#clock, #hour, #minute, #second,#center{
+    display: grid;
+    place-items: center;
+    position: absolute;
+}
+#hour, #minute, #second, #center{
+    border-radius: 100%;
+}
+#hour{
+    height: 125px;
+    width:3px;
+    border-top: 125px solid rgb(223, 237, 255);
+}
+#minute{
+    height: 100px;
+    width: 6px;
+    border-top: 100px solid rgb(255, 179, 128);
+}
+#second{
+    height: 75px;
+    width: 9px;
+    border-top: 75px solid rgb(255, 115, 51);
+}
